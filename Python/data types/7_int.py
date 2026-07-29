@@ -1,10 +1,10 @@
 age = 23
 year = 2026
-temperature = -3
+temp = -3
 zero = 0
 print(age)
 print(year)
-print(temperature)
+print(temp)
 print(zero)
 #Check datatype
 print(type(age))

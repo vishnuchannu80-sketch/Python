@@ -1,4 +1,4 @@
-# String DataType
+#String DataType
 name = "Arjunn"
 city = "USA"
 lang = "Python"

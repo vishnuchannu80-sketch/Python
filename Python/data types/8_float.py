@@ -6,7 +6,7 @@ print(pr)
 print(he)
 print(temp)
 print(perc)
-# Check datatype
+#Check datatype
 print(type(pr))
 # Float Arithmetic Oper
 a = 10.5
