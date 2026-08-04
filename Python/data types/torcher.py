@@ -1,2 +1,2 @@
 #torcher vysh
-Print("naaku vaddhu neneu potha")
+print ("naaku vaddhu nenu potha")
