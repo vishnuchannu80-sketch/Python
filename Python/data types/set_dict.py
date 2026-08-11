@@ -54,7 +54,6 @@ Person4 = {
     'city': 'Hyderabad'
 }
 
-'''
 # Accessing values in a dictionary
 print(Person1['name'])  # Output: Vishnu
 print(Person1['age'])   # Output: 31
@@ -88,7 +87,7 @@ if 'age' in Person1:
     print("Age exists in Person1")
 else:
     print("Age does not exist in Person1")  # Output: Age does not exist in Person1
-'''
+
 
 # remove key-value pair from all dictionaries
 people = [Person1, Person2, Person3, Person4]
@@ -96,4 +95,3 @@ for person in people:
     person.pop('age', None)  # Remove 'age' key if it exists, do nothing if it doesn't exist
 print(person)  # Output: {'name': 'Vishnu', 'city': 'Venkatagiri', 'job role': 'Administrator'}, etc.
 print(people)  # Output: [{'name': 'Vishnu', 'city': 'Venkatagiri', 'job role': 'Administrator'}, {'name': 'Vyshu', 'city': 'Hyderabad', 'job role': 'AI Engineer'}, {'name': 'Ram', 'city': 'Hyderabad', 'job role': 'Data Engineer'}, {'name': 'Sahishna', 'city': 'Hyderabad', 'job role': 'Support Engineer'}]
-
