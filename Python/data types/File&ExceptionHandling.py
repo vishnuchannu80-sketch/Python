@@ -1,19 +1,13 @@
 # file handling
-from pathlib import Path
+file = open('example.txt', 'w')  # Open a file in write mode
+file.write('Hello, World!\n')  # Write a string to the file
+file.write('This is a test file.\n')  # Write another string to the file
+file.write('Jai Vysh.\n')  # Write another string to the file
+file.close()  # Close the file
 
-file_path = Path(__file__).resolve().parent / 'example.txt'
 
-with file_path.open('w', encoding='utf-8') as file:
-    file.write('Hello, World!\n')
-    file.write('This is a test file.\n')
-    file.write('Jai Vysh.\n')
 
-with file_path.open('r', encoding='utf-8') as file:
-    content = file.read()
-
-updated_content = content.replace('Jai Vysh', 'torcher Vyshu')
-
-with file_path.open('w', encoding='utf-8') as file:
-    file.write(updated_content)
-
-print(updated_content)
+file = open('example.txt', 'r')  # Open the file in read mode
+content = content.replace('Jai Vysh', 'torcher Vyshu')  # Replace a string in the content
+print(file.read())  # Print the content to the console
+file.close()  # Close the file
