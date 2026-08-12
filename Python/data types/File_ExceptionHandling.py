@@ -11,3 +11,13 @@ file = open('example.txt', 'r')  # Open the file in read mode
 content = content.replace('Jai Vysh', 'torcher Vyshu')  # Replace a string in the content
 print(file.read())  # Print the content to the console
 file.close()  # Close the file
+
+
+
+# Exception handling
+try:
+    file = open('non_existent_file.txt', 'r')  # Try to open a non-existent file
+    content = file.read()  # Try to read the content of the file
+    print(content)  # Print the content to the console
+except FileNotFoundError:
+    print("File not found. Please check the file path.")  # Handle the exception and print an error message
